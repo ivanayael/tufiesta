@@ -1,69 +1,65 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: rgb(0, 0, 0);
-    margin: 0px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    }
-    
-    .container {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      max-width: 500px;
-      text-align: center;
-    }
-    
-    h1 {
-      color: #2c3e50;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffecd1; /* Color más cálido y festivo */
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    button {
-      background-color: #114161;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      width: 100%;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
-    
-    button:hover {
-      background-color: #082131;
-    }
-    
-    #message {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #e74c3c;
-    }
-    
-    a {
-      color: #114161;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      text-decoration: underline;
-    }
-  
-    #anagram {
-      font-size: 24px;
-      font-weight: bold;
-    }
+.container {
+  background-color: #fff5e6; /* Fondo suave y alegre */
+  padding: 40px;
+  border-radius: 20px; /* Bordes más suaves */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #f39c12; /* Color vibrante */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Texto más oscuro pero suave */
+}
+
+button {
+  background-color: #e67e22; /* Color cálido y divertido */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s; /* Añadir animación */
+}
+
+button:hover {
+  background-color: #d35400;
+  transform: scale(1.05); /* Pequeña animación al pasar el cursor */
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #e74c3c;
+}
+
+a {
+  color: #e67e22; /* Enlace en color festivo */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
