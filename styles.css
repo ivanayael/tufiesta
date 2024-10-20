@@ -55,11 +55,3 @@ button:hover {
   color: #e74c3c;
 }
 
-a {
-  color: #e67e22; /* Enlace en color festivo */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
