@@ -21,15 +21,15 @@
     function obtenerParametrosDeURL() {
         const parametros = new URLSearchParams(window.location.search);
         
-        // Obtener cada parámetro de la URL
-        const nombre = parametros.get('n') || 'La invitación no tiene nombre';
-        const pases = parametros.get('p') || 'No tiene pases disponibles';
-        const frase = parametros.get('f') || '';
-        const link = parametros.get('l') || '#';
-        const colorH1 = parametros.get('colorH1') || '#f39c12'; // Color para el H1
-        const colorP = parametros.get('colorP') || '#2c3e50';   // Color para el párrafo
-        const colorA = parametros.get('colorA') || '#e67e22';// Color para el enlace
-        const bgColor = parametros.get('bgColor') || '#ffecd1'; // Color de fondo
+        // Decodificar los parámetros que han sido codificados doblemente
+        const nombre = decodeURIComponent(parametros.get('n') || 'La invitación no tiene nombre');
+        const pases = decodeURIComponent(parametros.get('p') || 'No tiene pases disponibles');
+        const frase = decodeURIComponent(parametros.get('f') || '');
+        const link = decodeURIComponent(parametros.get('l') || '#');
+        const colorH1 = decodeURIComponent(parametros.get('colorH1') || '#f39c12'); // Color para el H1
+        const colorP = decodeURIComponent(parametros.get('colorP') || '#2c3e50');   // Color para el párrafo
+        const colorA = decodeURIComponent(parametros.get('colorA') || '#e67e22');   // Color para el enlace
+        const bgColor = decodeURIComponent(parametros.get('bgColor') || '#ffecd1'); // Color de fondo
         const fontFamily = decodeURIComponent(parametros.get('fontFamily') || 'Roboto, sans-serif'); // Fuente
 
         // Devolver los datos en un objeto
